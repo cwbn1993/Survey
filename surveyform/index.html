@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index-style.css">
+  <title>Choose Your Story</title>
+
+</head>
+
+<body>
+  <form id="container" action="php/creator.php" method="POST">
+
+    <h1>
+      Story Creator
+    </h1>
+
+    <p>
+      Choose Your Character
+    </p>
+
+    <div id="character">
+      <input id="siriusblack" type="radio" name="character" value="Sirius Black from Harry Potter" />
+      <label class="label" for="siriusblack"><img src="images/siriusblack-harrypotter-resize.jpg" alt="Sirius Black" /></label>
+      <input id="mirage" type="radio" name="character" value="Mirage from The Incredibles" />
+      <label class="label" for="mirage"><img src="images/mirage-incredibles-resize.jpg" alt="Mirage" /></label>
+      <input id="timmyturner" type="radio" name="character" value="Timmy Turner from Fairly Odd Parents" />
+      <label class="label" for="timmyturner"><img src="images/timmyturner-fairlyoddparents-resize.jpg" alt="Timmy Turner" /></label>
+    </div>
+
+    <p>
+      It's 1pm.<br>
+      Your alarm goes off.<br>
+      You look for something to drink.<br>
+      What do you get?
+    </p>
+
+    <div id="beverages">
+      <input id="coffee" type="radio" name="beverages" value="coffee" />
+      <label class="label" for="coffee"><img src="images/coffee-resize.png" alt="Coffee" /></label>
+      <input id="milk" type="radio" name="beverages" value="milk" />
+      <label class="label" id="milk-label" for="milk"><img src="images/milk-resize.png" alt="Coffee" /></label>
+      <input id="water" type="radio" name="beverages" value="water" />
+      <label class="label" for="water"><img src="images/water-resize.png" alt="Coffee" /></label>
+    </div>
+
+    <p>
+      As your taking a sip you look at the stovetop clock and notice it reads 2:15.<br>
+      It's daylight savings!<br>
+      You forgot to change your alarm.<br>
+      You got to go!<br>
+      How do you get to where your going?
+    </p>
+
+    <div id="transportation">
+      <input id="car" type="radio" name="transportation" value="car" />
+      <label class="label" for="car"><img src="images/car-resize.png" alt="Car" /></label>
+      <input id="bike" type="radio" name="transportation" value="bike" />
+      <label class="label" for="bike"><img src="images/bike-resize.png" alt="Coffee" /></label>
+      <input id="rollerblade" type="radio" name="transportation" value="rollerblades" />
+      <label class="label" for="rollerblade"><img src="images/rollerblade-resize.png" alt="Coffee" /></label>
+    </div>
+
+    <p>
+      Once you arrive, where are you?
+    </p>
+
+    <div id="destination">
+      <input id="office" type="radio" name="destination" value="office" />
+      <label class="label" for="office"><img src="images/office-resize.png" alt="Office" /></label>
+      <input id="bar" type="radio" name="destination" value="bar" />
+      <label class="label" for="bar"><img src="images/bar-resize.png" alt="Bar" /></label>
+      <input id="playground" type="radio" name="destination" value="playground" />
+      <label class="label" for="playground"><img src="images/playground-resize.png" alt="Playground" /></label>
+    </div>
+
+    <input id="submit" type="submit" name="submit">
+
+  </form>
+</body>
+
+</html>

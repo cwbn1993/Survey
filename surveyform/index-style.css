@@ -1,0 +1,72 @@
+body {
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  grid-auto-rows: min-content;
+}
+p {
+  font-size: 20px;
+  font-style: oblique;
+}
+#container * {
+  margin-left: auto;
+  margin-right: auto;
+}
+#container {
+  display: grid;
+  justify-content: center;
+  grid-auto-rows: min-content;
+  background-color: rgba(97, 195, 86, 0.71);
+  width: 700px;
+  border: 2px outset white;
+  border-radius: 10px;
+}
+#character, #beverages, #transportation, #destination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+#destination {
+  margin-bottom: 20px;
+}
+p {
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 10px auto 0px auto;
+}
+h2 {
+  margin-bottom: 20px;
+}
+input[type=radio] {
+  display: none;
+}
+label {
+  transition: transform 0.25s ease;
+}
+label img {
+  border-radius: 10px;
+}
+:checked+label {
+  transform: scale(0.75);
+}
+:checked+.label:before {
+  content: url(images/checked-resize.png);
+  position: absolute;
+  z-index: 100;
+  left: -8px;
+  top: -8px;
+}
+#submit {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: auto auto 20px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#submit:hover {
+  border-color: rgba(31, 125, 185, 0.68);
+}

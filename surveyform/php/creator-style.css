@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  grid-auto-rows: min-content;
+}
+p {
+  display: grid;
+  justify-content: center;
+  grid-auto-rows: min-content;
+  background-color: rgba(97, 195, 86, 0.71);
+  width: 700px;
+  border: 2px outset white;
+  border-radius: 10px;
+  padding: 50px;
+  line-height: 2;
+  font-size: 22px;
+  font-style: italic;
+}
